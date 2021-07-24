@@ -1,6 +1,8 @@
 {
   "name": "react",
   "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "description": "React example starter project",
   "keywords": [
     "react",
@@ -17,18 +19,19 @@
     "@types/jest": "26.0.24",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
+    "husky": "^7.0.1",
     "hygen": "^6.1.0",
+    "msw": "^0.32.2",
     "pre-commit": "^1.2.2",
-    "typescript": "4.0.5",
-    "husky": "^7.0.1"
-
+    "typescript": "4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --watchAll=false",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "mock": "node mock.js"
   },
   "husky": {
     "pre-commit": "yarn test "
@@ -38,5 +41,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "license": "UNLICENSED",
+  "msw": {
+    "workerDirectory": "public"
+  }
 }
