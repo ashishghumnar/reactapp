@@ -1,0 +1,32 @@
+@import './../common.scss';
+
+.textFieldWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .withIcon {
+        padding: $spacing-medium $spacing-large;
+    }
+
+    .inputGroup {
+        display: flex;
+    }
+
+    .icon {
+        position: absolute;
+        bottom: $spacing-medium;
+        min-width: 20px;
+    }
+
+    input {
+        border-bottom: $border-small solid $silver;
+        padding: $spacing-medium 0;
+    }
+
+    label {
+        margin-bottom: $spacing-medium;
+    }
+
+
+}

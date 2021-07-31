@@ -1,0 +1,33 @@
+@import './reset.scss';
+
+/*
+*Common Colors
+*/
+$silver: #ccc;
+
+/**
+Common Spacing Sizes
+*/
+$spacing-small: 4px;
+$spacing-medium: 8px;
+$spacing-large: 16px;
+$spacing-extraLarge: 31px;
+
+/**
+Brorders
+*/
+$border-small: 1px;
+$border-medium: 2px;
+
+/*
+Reset Common css
+*/
+input {
+ padding: 0;
+ border: none;
+}
+
+input:focus {
+ border: none;
+ outline: none;
+}
