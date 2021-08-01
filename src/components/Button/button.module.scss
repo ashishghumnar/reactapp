@@ -1,0 +1,20 @@
+
+.button:hover {
+    background-position: 100%;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to right, #108cf1, #89C5F5);
+    cursor: pointer;
+}
+
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    min-width: 300px;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    background-image: linear-gradient(to right,#89C5F5, #108cf1);
+}
