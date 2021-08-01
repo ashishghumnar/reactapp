@@ -1,0 +1,51 @@
+@import './../common.scss';
+
+.checkBoxWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .checkBoxGroup {
+        .checkBox {
+            border: 1px solid #3889D4;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        input:hover ~ .checkBox {
+            background-color: #ccc;
+        }
+
+        input:checked ~ .checkBox {
+            background-color: #3889D4;
+        }
+
+        .checkBox::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        input:checked ~ .checkBox:after {
+            display: block;
+            width: 4px;
+            height: 9px;
+            border: solid white;
+            border-width: 0px 3px 3px 0;
+            transform: rotate(45deg);
+            left: 6px;
+            top: 2px;
+            position: relative;
+        }
+
+        
+    }
+
+    
+
+    label {
+        margin-left: $spacing-medium;
+    }
+}

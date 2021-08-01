@@ -8,20 +8,27 @@ import style from './app.styles.module.scss';
   * Components
   */
 import TextField from './components/TextField';
+import CheckBox from './components/CheckBox';
 
 export default function App() {
   const [emailId, setEmailId] = useState<string>('');
+  const [saveInput, setSaveInput] = useState<boolean>(false);
 
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = event.currentTarget.value;
     setEmailId(value);
   };
+
+  const handleSaveCheckBox = (event: ChangeEvent<HTMLInputElement>) => {
+    setSaveInput(event.currentTarget.checked);
+  }
     
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <TextField  className={style.formField} label={'Email Id'} name={"emailId"} onChange={onChange} value={emailId} icon={'X'} />
-      <TextField  label={'Mobile Number'} name={"emailId"} onChange={onChange} value={emailId} />
+      <h1>Demo App</h1>
+      <TextField  className={style.formField} label={'Email Id'} name={"emailId"} onChange={handleOnChange} value={emailId} icon={'X'} />
+      <TextField  className={style.formField} label={'Mobile Number'} name={"emailId"} onChange={handleOnChange} value={emailId} />
+      <CheckBox  className={style.formField} label={'Save'} name={"agree"} onChange={handleSaveCheckBox} isChecked={saveInput} />
     </div>
   );
 }

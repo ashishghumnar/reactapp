@@ -18,16 +18,3 @@ Brorders
 */
 $border-small: 1px;
 $border-medium: 2px;
-
-/*
-Reset Common css
-*/
-input {
- padding: 0;
- border: none;
-}
-
-input:focus {
- border: none;
- outline: none;
-}

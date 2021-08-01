@@ -1,0 +1,20 @@
+/*
+Reset Common css
+*/
+input {
+ padding: 0;
+ border: none;
+}
+
+input:focus {
+ border: none;
+ outline: none;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  z-index: 1111;
+}

@@ -16,7 +16,7 @@ function TextField(props: Props) {
 
   return (
     <div className={`${style.textFieldWrapper} ${className}`}>
-      <label htmlFor={name} className="label">{label}</label>
+      <label htmlFor={name} className={style.label}>{label}</label>
       <div className={style.inputGroup}>
         {icon ? <span className={style.icon}>{icon}</span> : null}
         <input id={name} className={icon ? style.withIcon : ''} defaultValue={defaultValue} value={value} onChange={onChange} />
