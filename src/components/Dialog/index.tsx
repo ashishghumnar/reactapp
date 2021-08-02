@@ -17,7 +17,7 @@ function Dialog(props: Props) {
 
   return (
     <div className={`${style.dialogWrapper} ${className}`}>
-      <div className={style.overlay} />
+      <div className={style.overlay} onClick={onClose} />
       <div className={style.dialog}>
         <nav>
           <div className={style.backBtn} onClick={onBack}>{'<'}</div>
