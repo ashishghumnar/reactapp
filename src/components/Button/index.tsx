@@ -2,7 +2,7 @@ import React  from 'react';
 import style from './button.module.scss';
 
 type Props = {
-  className: string;
+  className?: string;
   label: string;
   onClick: () => void;
 };

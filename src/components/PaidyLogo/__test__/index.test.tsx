@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Button from '../index';
+import PaidyLogo from '../PaidyLogo';
 
-describe('(Component) Button', () => {
+describe('(Component) PaidyLogo', () => {
   const defaultProps = {
     sampleProps: 'Sample',
   };

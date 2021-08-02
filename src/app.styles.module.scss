@@ -1,3 +1,17 @@
 .formField {
     margin-bottom: 30px;
+    width: 100%;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.contentSection {
+    padding: 10px;
 }

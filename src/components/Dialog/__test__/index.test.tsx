@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Button from '../index';
+import Dialog from '../Dialog';
 
-describe('(Component) Button', () => {
+describe('(Component) Dialog', () => {
   const defaultProps = {
     sampleProps: 'Sample',
   };
