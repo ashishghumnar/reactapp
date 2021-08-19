@@ -1,5 +1,9 @@
 import { StrictMode } from "react";
+
+
+import { Provider } from 'react-redux';
 import ReactDOM from "react-dom";
+import store from './store';
 
 import App from "./App";
 
@@ -12,7 +16,9 @@ async function main() {
   const rootElement = document.getElementById("root");
   ReactDOM.render(
     <StrictMode>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </StrictMode>,
     rootElement
   );
